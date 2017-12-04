@@ -1,5 +1,4 @@
 ﻿using System;
-using contract.Enum;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
@@ -19,7 +18,7 @@ namespace contract
         [JsonProperty(PropertyName = "demo")]
         bool Demo { get; set; }
 
-        [JsonConverter(typeof(StringEnumConverter))]
+        //[JsonConverter(typeof(StringEnumConverter))]
         ServiceId ServiceId { get; set; }
     }
 }
